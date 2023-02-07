@@ -1,0 +1,2 @@
+Start a new basic form in which name, email, phone, 
+Selectbox (technologies), multiselect (skills), checkbox with agree with terms and condition with html css. All the fields are mandatory. Put validation on every field using vanila javascript

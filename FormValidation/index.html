@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <div id="container">
+       <form  id="form">
+          <div class="name-field flex-class">
+             <label for="name">Name</label>
+             <input type="text" name="name" id="name" placeholder="celebal"> 
+             <span class="nameError"></span> 
+          </div>  
+          <div class="email-field flex-class">
+             <label for="email">Email</label>
+             <input type="text" name="email" id="email" placeholder="example@gmail.com" >
+             <span class="emailError"></span>   
+          </div>  
+          <div class="phone-field flex-class">
+             <label for="phone">Phone</label>
+             <input type="text" name="phone" id="phone" placeholder="1234567890">
+             <span class="phoneError"></span>   
+          </div>  
+          <div class="technology-field flex-class">
+            <label for="technologies">Technogies</label>
+             <select name="technologies" id="technogies">
+                <option selected disabled value>Choose technology</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Cloud Computing">Cloud Computing</option>
+                <option value="BlockChain">BlockChain</option>
+                <option value="Cyber Security">Cyber Security</option>
+             </select>
+             <span class="selectionError"></span> 
+          </div>  
+          <div class="skill-field flex-class">
+            <label for="skills">Skills</label>
+             <select name="skills" id="skills" multiple>
+                <option value="Html">Html</option>
+                <option value="Css">Css</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="ReactJs">ReactJs</option>
+                <option value="Sql">Sql</option>
+                <option value="Aws">Aws</option>
+                <option value="C#">C#</option>
+                <option value="NodeJs">NodeJs</option>
+                <option value="Django">Django</option>
+                <option value="Ethereum">Ethereum</option>
+             </select>
+             <span class="multiSelectError"></span> 
+          </div>  
+           <div class="agree">
+            <div class="ineer-agree">
+               <input type="checkbox"
+               name="checkbox" id="checkbox" >
+               <p id="text">Agree with terms & condition</p>
+            </div>
+               <div class="error">
+                  <span class="AgreementError"></span> 
+               </div>
+           </div>
+           <div class="submit-field-button">
+               <button type="submit">Submit</button>
+           </div>
+        </form>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
